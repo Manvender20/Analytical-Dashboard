@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CausalFunnel Demo Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 24px;
+      background: #f5f7fb;
+      color: #172033;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      margin: 20px 0;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+    }
+
+    button {
+      padding: 12px 18px;
+      margin: 8px 8px 0 0;
+      cursor: pointer;
+      border: 0;
+      border-radius: 8px;
+      background: #2563eb;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Demo Store</h1>
+  <p>Interact with this page to generate analytics events.</p>
+
+  <div class="card">
+    <h2>Running Shoes</h2>
+    <p>Price: ₹2,499</p>
+    <button onclick="alert('Added to cart!')">Add to cart</button>
+  </div>
+
+  <div class="card">
+    <h2>Sports Backpack</h2>
+    <p>Price: ₹1,299</p>
+    <button onclick="alert('Product details opened!')">View product</button>
+  </div>
+
+  <div class="card">
+    <h2>Special offer</h2>
+    <p>Explore our latest collection.</p>
+    <button onclick="alert('Offer selected!')">Explore offer</button>
+  </div>
+
+  <script src="/tracker.js"></script>
+</body>
+</html>
